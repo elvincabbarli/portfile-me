@@ -16,7 +16,7 @@
     <nav>
       <div class="navbar">
         <i class="bx bx-menu"></i>
-        <a href="#!" class="logo"><img src="./img/logo.png" alt="" /></a>
+        <a href="#!" class="logo"><img id="logo-main" src="./img/logo.png" alt="" /></a>
         <div class="nav-links">
           <div class="sidebar-logo">
             <span class="logo-name"><img src="./img/logo.png" alt="" /></span>
@@ -67,7 +67,7 @@
 
             <li>
               <a class="js-arrow" href="#">Writers</a>
-              <i class="bx bxs-chevron-down  arrow"></i>
+              <i class="bx bxs-chevron-down arrow"></i>
               <ul class="js-sub-menu sub-menu">
                 <li><a href="#">Dynamic Clock</a></li>
                 <li><a href="#">Form Validation</a></li>
@@ -123,7 +123,29 @@
       </div>
     </nav>
     <!--<script src="script.js"></script>-->
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/app.js"></script>
+    <script>
+      const logoMain = document.getElementById('logo-main')
+
+        window.onresize = displayWindowSize;
+        window.onload = displayWindowSize;
+
+        function displayWindowSize() {
+          let myWidth = window.innerWidth;
+          if(myWidth <= 768){
+            logoMain.src = './img/logo-mobile.png'
+          }
+          else if(myWidth >= 768){
+            logoMain.src = './img/logo.png'
+          }
+        }
+
+    </script>
   </body>
 </html>
