@@ -10,118 +10,79 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <nav>
-      <div class="navbar">
-        <i class="bx bx-menu"></i>
-        <a href="#!" class="logo"><img id="logo-main" src="./img/logo.png" alt="" /></a>
-        <div class="nav-links">
-          <div class="sidebar-logo">
-            <span class="logo-name"><img src="./img/logo.png" alt="" /></span>
-            <i class="bx bx-x"></i>
+    <header>
+      <nav>
+        <div class="navbar">
+          <i class="bx bx-menu"></i>
+          <a href="#!" class="logo">
+            <img id="logo-main" src="./img/logo.png" alt="" />
+          </a>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img src="./img/logo.png" alt="" /></span>
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="links">
+              <li>
+                <a href="#">Designer</a>
+                <i class="bx bxs-chevron-down designer-arrow arrow"></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Login Forms</a></li>
+                  <li><a href="#">Card Design</a></li>
+                </ul>
+              </li>
+  
+              <li>
+                <a href="#">Developer</a>
+                <i class="bx bxs-chevron-down developer-arrow arrow"></i>
+                <ul class="js-sub-menu sub-menu">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Login Forms</a></li>
+                  <li><a href="#">Card Design</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <ul class="links">
-            <li>
-              <a href="#">Designer</a>
-              <i class="bx bxs-chevron-down designer-arrow arrow"></i>
-              <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Login Forms</a></li>
-                <li><a href="#">Card Design</a></li>
-                <li class="more">
-                  <span
-                    ><a href="#">More</a>
-                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                  </span>
-                  <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Neumorphism</a></li>
-                    <li><a href="#">Pre-loader</a></li>
-                    <li><a href="#">Glassmorphism</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="#">Developer</a>
-              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-              <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Login Forms</a></li>
-                <li><a href="#">Card Design</a></li>
-                <li class="more">
-                  <span
-                    ><a href="#">More</a>
-                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                  </span>
-                  <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Neumorphism</a></li>
-                    <li><a href="#">Pre-loader</a></li>
-                    <li><a href="#">Glassmorphism</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <a class="js-arrow" href="#">Writers</a>
-              <i class="bx bxs-chevron-down arrow"></i>
-              <ul class="js-sub-menu sub-menu">
-                <li><a href="#">Dynamic Clock</a></li>
-                <li><a href="#">Form Validation</a></li>
-                <li><a href="#">Card Slider</a></li>
-                <li><a href="#">Complete Website</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="#">Photo/Video</a>
-              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-              <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Login Forms</a></li>
-                <li><a href="#">Card Design</a></li>
-                <li class="more">
-                  <span
-                    ><a href="#">More</a>
-                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                  </span>
-                  <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Neumorphism</a></li>
-                    <li><a href="#">Pre-loader</a></li>
-                    <li><a href="#">Glassmorphism</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="#">Artist</a>
-              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-              <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Login Forms</a></li>
-                <li><a href="#">Card Design</a></li>
-                <li class="more">
-                  <span
-                    ><a href="#">More</a>
-                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                  </span>
-                  <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Neumorphism</a></li>
-                    <li><a href="#">Pre-loader</a></li>
-                    <li><a href="#">Glassmorphism</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <a href="#" class="login-btn">ADD ME</a>
         </div>
-        <a href="#" class="login-btn">ADD ME</a>
+      </nav>
+    </header>
+
+    <section class="default-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/1cover.png" alt="">
+            <p>NO CV, NO PROBLEM</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/1cover.png" alt="">
+            <p>NO CV, NO PROBLEM</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/1cover.png" alt="">
+            <p>NO CV, NO PROBLEM</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/1cover.png" alt="">
+            <p>NO CV, NO PROBLEM</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/1cover.png" alt="">
+            <p>NO CV, NO PROBLEM</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </nav>
+      <div class="discover-section">
+        <h2>Discover</h2>
+      </div>
+    </section>
     <!--<script src="script.js"></script>-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -130,22 +91,35 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      const logoMain = document.getElementById('logo-main')
+      const logoMain = document.getElementById("logo-main");
 
-        window.onresize = displayWindowSize;
-        window.onload = displayWindowSize;
+      window.onresize = displayWindowSize;
+      window.onload = displayWindowSize;
 
-        function displayWindowSize() {
-          let myWidth = window.innerWidth;
-          if(myWidth <= 768){
-            logoMain.src = './img/logo-mobile.png'
-          }
-          else if(myWidth >= 768){
-            logoMain.src = './img/logo.png'
-          }
+      function displayWindowSize() {
+        let myWidth = window.innerWidth;
+        if (myWidth <= 768) {
+          logoMain.src = "./img/logo-mobile.png";
+        } else if (myWidth >= 768) {
+          logoMain.src = "./img/logo.png";
         }
-
+      }
     </script>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+     var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+    });
+  </script>
   </body>
 </html>
