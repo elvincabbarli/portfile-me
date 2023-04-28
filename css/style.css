@@ -6,17 +6,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container{
+.container {
   max-width: 1260px !important;
 }
 
-
-.col-lg-3 , .col-lg-6{
+.col-lg-3,
+.col-lg-6 {
   margin: 15px 0 !important;
   padding-right: 0 !important;
 }
-
-
 
 @font-face {
   font-family: "CodecPro";
@@ -234,13 +232,25 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .one-part {
-  flex-grow: 1;
-  /* min-width: 300px; */
   height: 340px;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   position: relative;
+}
+
+.double-part::before {
+  content: "";
+  background: linear-gradient(
+    183.08deg,
+    rgba(0, 0, 0, 0) 46.98%,
+    rgba(0, 0, 0, 0.5) 93.68%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .one-part img,
@@ -270,57 +280,58 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .double-part {
-  flex-grow: 2;
   height: 340px;
-  /* min-width: 300px; */
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
 
-.social-icons {
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  color: #fff;
-  transform: translate(-50%, 0%);
-  font-size: 30px;
-  transition: all 0.5s ease-in-out;
-}
-
-.one-part:hover img {
+.one-part:hover img,
+.double-part:hover img {
   transform: scale(1.2) rotate(-5deg);
   transition: all 0.5s ease-in-out;
 }
 
-.one-part:hover .one-part-a p {
-  bottom: 5%;
-  transition: all 0.5s ease-in-out;
+.double-part:hover img::before {
+  content: "";
+  background: linear-gradient(
+    183.08deg,
+    rgba(0, 0, 0, 0) 46.98%,
+    rgba(0, 0, 0, 0.5) 93.68%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.one-part:hover .social-icons {
-  bottom: 2%;
+.one-part:hover .one-part-a p,
+.double-part:hover .one-part-a p {
+  bottom: 1%;
   transition: all 0.5s ease-in-out;
 }
 
 /* NEWEST SECTION */
-.newest-section{
+.newest-section {
   width: 100%;
   margin: 43px auto;
 }
 
-.mySwiper2{
+.mySwiper2 {
   width: 100%;
   margin-top: 10px;
 }
 
-.newest-section h2{
+.newest-section h2 {
   font-family: CodecPro;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 27px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (max-width: 920px) {
